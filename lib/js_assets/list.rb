@@ -4,7 +4,7 @@ module JsAssets
       attr_accessor :exclude, :allow
     end
     @exclude = ['application.js']
-    @allow = ['*.html']
+    @allow = ['*.html', '*.svg']
     def self.fetch
       project_assets = {}
       env = Sprockets::Railtie.build_environment(::Rails.application)
